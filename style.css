@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     overflow: hidden;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-body{
+
+body {
     width: 100%;
     height: 100vh;
     background-color: rgb(33, 33, 75);
@@ -13,47 +14,100 @@ body{
     align-items: center;
     justify-content: center;
 }
-.container{
+
+.container {
     width: 450px;
     height: 600px;
 }
-.header{
+
+.header {
     width: 100%;
     height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header h2{
+
+.header h2 {
     padding-left: 20px;
     font-size: 1.4rem;
     font-family: 'Anton', sans-serif;
     letter-spacing: 3px;
 }
-.header .theme{
+
+.header .theme {
     padding-right: 20px;
+    display: flex;
+    align-items: flex-end;
 }
-.header .theme p{
+
+.header .theme p {
     font-size: 0.8rem;
     text-transform: uppercase;
+    padding: 0 0 2.5px 0;
 }
-.screen{
+
+.theme-btn-container {
+    display:flex;
+    flex-direction: column;
+    margin: 0 0 0 20px;
+}
+
+.theme-num {
+    display: flex;
+    justify-content: space-around;
+}
+
+.theme-btn {
+    border-radius: 20px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.486);
+    width: 60px;
+    height: 20px;
+    align-items: center;
+}
+
+.theme-btn button {
+    border: none;
+    background-color: orangered;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.theme-btn-1 {
+    display: none;
+}
+
+.theme-btn-2 {
+    display: none;
+}
+
+.theme-btn-3 {
+    /* display: none; */
+}
+
+.screen {
     width: 100%;
     height: 15%;
     background-color: rgb(6, 6, 44);
     border-radius: 10px;
     margin-bottom: 30px;
 }
-.btns{
+
+.btns {
     width: 100%;
     height: 50vh;
 }
-.btns .btn-row{
+
+.btns .btn-row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
 }
-.btn-row button{
+
+.btn-row button {
     width: 100px;
     height: 60px;
     font-size: 2rem;
@@ -61,7 +115,8 @@ body{
     border-radius: 10px;
     background-color: rgb(202, 202, 202);
 }
-.btns{
+
+.btns {
     background-color: rgb(6, 6, 44);
     width: 100%;
     height: 40vh;
@@ -71,15 +126,17 @@ body{
     align-items: center;
     border-radius: 10px;
 }
-.btns .btn{
+
+.btns .btn {
     width: 100%;
     height: 20%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
-.btns .btn button{
+
+.btns .btn button {
     width: 48%;
     height: 60px;
     font-size: 2rem;
@@ -88,18 +145,22 @@ body{
     margin: 0 4px;
     background-color: rgb(202, 202, 202);
 }
-.btns .btn .reset{
+
+.btns .btn .reset {
     background-color: rgb(55, 55, 110);
     color: white;
 }
-.btns .btn-row .del{
+
+.btns .btn-row .del {
     background-color: rgb(55, 55, 110);
     color: white;
 }
-.btns .btn .equal{
-    background-color: rgb(167, 29, 29);
+
+.btns .btn .equal {
+    background-color: orangered;
     color: white;
 }
-button{
+
+button {
     border: none;
 }
