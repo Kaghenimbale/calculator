@@ -15,11 +15,12 @@ body{
 }
 .container{
     width: 450px;
-    height: 600px;
+    height: 700px;
+
 }
 .header{
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +28,7 @@ body{
 .header h2{
     padding-left: 20px;
     font-size: 1.4rem;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Anton', sans-serif, Arial, Helvetica, sans-serif;
     letter-spacing: 3px;
 }
 .header .theme{
@@ -42,20 +43,22 @@ body{
     height: 15%;
     background-color: rgb(6, 6, 44);
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
-.btns{
+/* .header .btns{
     width: 100%;
-    height: 50vh;
-}
+    height: auto;
+} */
 .btns .btn-row{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
 }
 .btn-row button{
-    width: 100px;
-    height: 60px;
+    /* width: 100px;
+    height: 60px; */
+    width: 6rem;
+    height: 4rem;
     font-size: 2rem;
     font-weight: bold;
     border-radius: 10px;
@@ -64,12 +67,13 @@ body{
 .btns{
     background-color: rgb(6, 6, 44);
     width: 100%;
-    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    gap: 40px;
+    padding: 20px 0;
 }
 .btns .btn{
     width: 100%;
@@ -77,8 +81,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
+
 .btns .btn button{
     width: 48%;
     height: 60px;
