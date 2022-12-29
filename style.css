@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(33, 33, 75);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 450px;
+    height: 600px;
+}
+.header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h2{
+    padding-left: 20px;
+    font-size: 1.4rem;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+}
+.header .theme{
+    padding-right: 20px;
+}
+.header .theme p{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+.screen{
+    width: 100%;
+    height: 15%;
+    background-color: rgb(6, 6, 44);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.btns{
+    width: 100%;
+    height: 50vh;
+}
+.btns .btn-row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+.btn-row button{
+    width: 100px;
+    height: 60px;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgb(202, 202, 202);
+}
+.btns{
+    background-color: rgb(6, 6, 44);
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.btns .btn{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.btns .btn button{
+    width: 48%;
+    height: 60px;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 0 4px;
+    background-color: rgb(202, 202, 202);
+}
+.btns .btn .reset{
+    background-color: rgb(55, 55, 110);
+    color: white;
+}
+.btns .btn-row .del{
+    background-color: rgb(55, 55, 110);
+    color: white;
+}
+.btns .btn .equal{
+    background-color: rgb(167, 29, 29);
+    color: white;
+}
+button{
+    border: none;
+}
